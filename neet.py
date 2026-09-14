@@ -34,7 +34,7 @@ a2=0
 a3=0
 a4=0
 
-for i in attempt_count:
+for i in attempt:
     if i==1:
         a1+=1
     elif i==2:
@@ -46,3 +46,29 @@ for i in attempt_count:
 
 attempt_count=[a1,a2,a3,a4]
 print(attempt_count)
+
+state=neet_data[:,5].astype(str)
+state_wise=[]
+b1=0
+b2=0
+b3=0
+b4=0
+b5=0
+b6=0
+
+for i in state:
+    if i=="Maharashtra":
+        b1+=1
+    elif i=="Delhi":
+        b2+=1
+    elif i=="Tamil Nadu":
+        b3+=1
+    elif i=="Karnataka":
+        b4+=1
+    elif i=="West Bengal":
+        b5+=1
+    else:
+        b6+=1
+
+state_wise=[b1,b2,b3,b4]
+print(state_wise)
